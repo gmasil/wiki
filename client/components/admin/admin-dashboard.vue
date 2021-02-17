@@ -137,6 +137,8 @@ export default {
     isLatestVersion() {
       if (this.info.latestVersion === 'n/a' || this.info.currentVersion === 'n/a') {
         return true
+      } else if (this.info.latestVersion + '-gmasil' === this.info.currentVersion) {
+        return true
       } else {
         return semverLte(this.info.latestVersion, this.info.currentVersion)
       }
