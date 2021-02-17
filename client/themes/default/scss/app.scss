@@ -1004,6 +1004,10 @@
   }
 }
 
+// ------------
+// CUSTOM STYLE
+// ------------
+
 .v-application {
   // top navbar
   header {
@@ -1034,6 +1038,7 @@
     // nav switcher buttons
     .v-list {
       background-color: mc('theme', 'primary') !important;
+      color: #fff !important;
     }
   }
 
@@ -1069,7 +1074,13 @@
   // latest edit panel text color
   .indigo--text {
     color: mc('theme', 'primary') !important;
-      caret-color: mc('theme', 'primary') !important;
+    caret-color: mc('theme', 'primary') !important;
+  }
+
+  // generic colors primary
+  .primary--text {
+    color: mc('theme', 'primary') !important;
+    caret-color: mc('theme', 'primary') !important;
   }
 }
 
@@ -1091,4 +1102,39 @@
 .editor-markdown-toolbar {
   background-color: mc('theme', 'primary') !important;
   background-image: linear-gradient(180deg,lighten(mc('theme', 'primary'), 3%),mc('theme', 'primary')) !important;
+}
+
+// ----------
+// ADMIN AREA
+// ----------
+
+// left navigation font colors
+.v-navigation-drawer {
+  .v-list {
+    .v-list-item {
+      .v-list-item__title, .v-icon, .v-subheader {
+        color: white !important;
+      }
+      &.v-list-item--active::before {
+        background-color: white !important;
+        opacity: 0.24;
+      }
+    }
+
+    .v-subheader {
+      color: white !important;
+    }
+
+    .v-divider {
+      border-color: rgba(255, 255, 255, .3) !important;
+    }
+
+    .v-chip {
+      .v-chip__content {
+        .caption.grey--text {
+          color: mc('theme', 'secondary') !important;
+        }
+      }
+    }
+  }
 }
