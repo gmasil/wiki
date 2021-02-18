@@ -26,7 +26,7 @@ pwered by
 
 </div>
 
-<hr style="margin: 4rem 0" />
+<hr />
 
 This repository is forked from [Requarks/wiki](https://github.com/Requarks/wiki)
 
@@ -34,7 +34,7 @@ Original readme: [here](https://github.com/Requarks/wiki/blob/dev/README.md)
 
 The code is modified to my own needs for the [Gmasil website](https://gmasil.de).
 
-<div style="margin-top: 4rem" />
+<hr />
 
 # Changes
 * primary/secondary theme color to match corporate design
