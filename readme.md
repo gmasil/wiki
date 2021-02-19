@@ -40,3 +40,4 @@ The code is modified to my own needs for the [Gmasil website](https://gmasil.de)
 * primary/secondary theme color to match corporate design
 * disable "this is a development build" banner
 * fix recognition of versions with potfix as latest version
+* fix site tree navigation ([PR 2933](https://github.com/Requarks/wiki/pull/2933) by [@douglaslassance](https://github.com/douglaslassance))
