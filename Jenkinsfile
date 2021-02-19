@@ -20,5 +20,10 @@ pipeline {
         sh 'docker push registry.gmasil.de/docker/gmasil-wiki:latest'
       }
     }
+    stage('deploy') {
+      steps {
+        sh 'docker restart wikijs'
+      }
+    }
   }
 }
