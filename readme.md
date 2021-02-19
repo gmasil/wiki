@@ -42,3 +42,4 @@ The code is modified to my own needs for the [Gmasil website](https://gmasil.de)
 * fix recognition of versions with potfix as latest version
 * fix site tree navigation ([PR 2933](https://github.com/Requarks/wiki/pull/2933) by [@douglaslassance](https://github.com/douglaslassance))
 * give the logo in admin/general the background color of the top navbar
+* make home page fullscreen (remove toc, tags, social etc.)
