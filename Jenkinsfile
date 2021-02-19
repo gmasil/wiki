@@ -5,7 +5,9 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker build -t registry.gmasil.de/docker/gmasil-wiki -f dev/build/Dockerfile .'
+        retry(count: 3) {
+          sh 'docker build -t registry.gmasil.de/docker/gmasil-wiki -f dev/build/Dockerfile .'
+        }
       }
     }
     stage('push') {
