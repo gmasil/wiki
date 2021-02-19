@@ -1038,15 +1038,23 @@
     // nav switcher buttons
     .v-list {
       background-color: mc('theme', 'primary') !important;
-      color: #fff !important;
+      color: mc('grey', '50') !important;
 
       .v-list-item {
+        // navbar entries
         .v-list-item__title, .v-icon, .v-subheader {
-          color: white !important;
+          color: mc('grey', '50') !important;
         }
+        // hover
         &.v-list-item--active::before {
           background-color: white !important;
           opacity: 0.24;
+        }
+        // disabled navbar entries
+        &.v-list-item--disabled {
+          .v-list-item__title, .v-icon {
+            color: mc('blue', '200') !important;
+          }
         }
       }
 
