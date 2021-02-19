@@ -1108,6 +1108,11 @@
     color: mc('theme', 'primary') !important;
     caret-color: mc('theme', 'primary') !important;
   }
+
+  .secondary-bg {
+    background-color: mc('theme', 'secondary');
+    border-color: mc('theme', 'secondary');
+  }
 }
 
 // search bar and results

@@ -44,7 +44,7 @@
                   .overline.grey--text.pa-4 {{$t('admin:general.logo')}}
                   .pt-2.pb-7.pl-10.pr-3
                     .d-flex.align-center
-                      v-avatar(size='100', tile)
+                      v-avatar.secondary-bg(size='100', tile)
                         v-img(
                           :src='config.logoUrl'
                           lazy-src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNcWQ8AAdcBKrJda2oAAAAASUVORK5CYII='
